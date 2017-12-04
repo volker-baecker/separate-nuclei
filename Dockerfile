@@ -7,3 +7,4 @@ RUN cd /fiji && \
     wget -O run_separate_nuclei.sh \
             https://gist.githubusercontent.com/volker-baecker/1f2c03de203fe559068d9379b0a730bf/raw/5833c3537307eaf7015b3fedf8f1f1bb2e46c88c/run_separate_nuclei.sh && \
             chmod a+x run_separate_nuclei.sh
+ENTRYPOINT ["/bin/sh", "run_separate_nuclei.sh"]
